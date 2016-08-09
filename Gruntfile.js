@@ -95,6 +95,14 @@ module.exports = function(grunt) {
         cmd: 'chmod 0755 dist/debian/<%= globalConfig.pkgname %>_<%= globalConfig.pkgver %>-<%= globalConfig.pkgrev %>/DEBIAN/control',
         stdout: true
       },
+      chmod_session: {
+        cmd: 'chmod 0755 dist/debian/<%= globalConfig.pkgname %>_<%= globalConfig.pkgver %>-<%= globalConfig.pkgrev %>/usr/bin/<%= globalConfig.pkgname %>-session',
+        stdout: true
+      },
+      chmod_cinnamon: {
+        cmd: 'chmod 0755 dist/debian/<%= globalConfig.pkgname %>_<%= globalConfig.pkgver %>-<%= globalConfig.pkgrev %>/usr/bin/<%= globalConfig.pkgname %>',
+        stdout: true
+      },
       dpkg_deb: {
         cmd: 'dpkg-deb --build dist/debian/<%= globalConfig.pkgname %>_<%= globalConfig.pkgver %>-<%= globalConfig.pkgrev %> dist/debian',
         stdout: true
@@ -105,7 +113,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-exec');
-  grunt.registerTask('default', ['copy:debian', 'concat:postinst','concat:postrm','exec:chmod_postinst','exec:chmod_postrm','exec:chmod_control', 'exec:dpkg_deb']);
-  grunt.registerTask('debian', ['copy:debian', 'concat:postinst','concat:postrm','exec:chmod_postinst','exec:chmod_postrm','exec:chmod_control', 'exec:dpkg_deb']);
+  grunt.registerTask('default', ['copy:debian', 'concat:postinst','concat:postrm','exec:chmod_postinst','exec:chmod_postrm','exec:chmod_control', 'exec:chmod_session','exec:chmod_cinnamon', 'exec:dpkg_deb']);
+  grunt.registerTask('debian', ['copy:debian', 'concat:postinst','concat:postrm','exec:chmod_postinst','exec:chmod_postrm','exec:chmod_control', 'exec:chmod_session','exec:chmod_cinnamon', 'exec:dpkg_deb']);
     grunt.registerTask('aur', ['copy:aur']);
 };
