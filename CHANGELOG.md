@@ -1,10 +1,14 @@
 # Change Log
 
 ## [Unreleased]
+
+## [0.4.0] - 2016-08-09
+
 ### Changed
 
 - Versions altered to minors
 - Name from i3-cinnamon to cinnamon-i3
+- Building for AUR moved to grunt builder
 
 ### Added
 - Refactored project structure
