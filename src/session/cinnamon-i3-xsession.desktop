@@ -2,5 +2,5 @@
 Encoding=UTF-8
 Name=i3 + Cinnamon
 Comment=i3 with cinnamon-session and cinnamon-settings-daemon
-Exec=/usr/bin/cinnamon-session-i3
+Exec=/usr/bin/cinnamon-i3-session
 Type=XSession

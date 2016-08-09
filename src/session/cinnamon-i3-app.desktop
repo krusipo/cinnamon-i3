@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
-Name=i3-cinnamon
+Name=cinnamon-i3wm
 Comment=improved dynamic tiling window manager, registers with cinnamon session manager
-Exec=i3-cinnamon
+Exec=cinnamon-i3
 X-GNOME-WMName=i3
 X-GNOME-Autostart-Phase=WindowManager
 X-GNOME-Provides=windowmanager
