@@ -4,6 +4,12 @@
 ### Changed
 
 - Versions altered to minors
+- Name from i3-cinnamon to cinnamon-i3
+
+### Added
+- Refactored project structure
+- Buildtools for package managers
+- Support for building of debian distributions
 
 ## [0.3.0] - 2016-01-05
 
