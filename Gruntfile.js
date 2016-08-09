@@ -74,11 +74,11 @@ module.exports = function(grunt) {
     },
     concat: {
       postinst: {
-        src: ['debian/postinst/1.sh', '<%= globalConfig.pkgname %>.install', 'debian/postinst/3.sh'],
+        src: ['debian/postinst/1.sh', 'src/session/<%= globalConfig.pkgname %>.install', 'debian/postinst/3.sh'],
         dest: 'dist/debian/<%= globalConfig.pkgname %>_<%= globalConfig.pkgver %>-<%= globalConfig.pkgrev %>/DEBIAN/postinst'
       },
       postrm: {
-        src: ['debian/postrm/1.sh', '<%= globalConfig.pkgname %>.install', 'debian/postrm/3.sh'],
+        src: ['debian/postrm/1.sh', 'src/session/<%= globalConfig.pkgname %>.install', 'debian/postrm/3.sh'],
         dest: 'dist/debian/<%= globalConfig.pkgname %>_<%= globalConfig.pkgver %>-<%= globalConfig.pkgrev %>/DEBIAN/postrm'
       }
     },
