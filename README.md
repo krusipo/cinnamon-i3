@@ -45,3 +45,5 @@ Bindings for i3 config
 
     bindsym $mod+Shift+h exec cinnamon-session-quit --power-off
     bindsym $mod+Shift+l exec cinnamon-screensaver-command -l
+
+forked from https://github.com/Gigadoc2/i3-cinnamon
