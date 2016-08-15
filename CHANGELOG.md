@@ -2,7 +2,10 @@
 
 ## [Unreleased]
 
+## [0.5.0] - 2016-08-16
+
 - Documentation improved
+- Name and comment of session changed
 
 ## [0.4.0] - 2016-08-09
 
