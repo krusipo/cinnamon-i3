@@ -2,13 +2,40 @@
 
 i3 as window manager for cinnamon sessions
 
-Supports
+Features:
 
-Debian 8.5
-Arch Linux
-In '~/.config/i3/config':
-* use 'exec cinnamon-session-quit --logout'    : logout dialog
-* use 'exec cinnamon-session-quit --power-off' : shutdown menu
-* use 'exec cinnamon-screensaver-command -l'   : locks the screen
-* use 'exec cinnamon-screensaver-lock-dialog   : lockscreen with message
+Use Cinnamon desktop enviroment and replace muffin with i3 as window manager.
 
+* bindings for fn-keys such as brightness, volume network from cinnamon.
+* notifications from cinnamon
+* improved look and feel of applications 
+* screensaver from cinnamon
+* Control system settings from cinnamon
+
+Note: i3 replace cinnamon panels, desklets, applets etc.
+
+Packages:
+
+| distro        | package       |
+| ------------- |:-------------:|
+| debian        | right-aligned |
+| aur           | centered      |
+
+[cinnamon-i3_current_amd64.deb](https://www.google.com)
+
+
+Build from source:
+
+    grunt [task]
+        debian              Build debian package to dist/debian
+        aur                 Build aur package to dist/aur
+
+Bindings for i3 config
+
+    # exit i3 (logs you out of your X session)
+    bindsym $mod+Shift+e exec cinnamon-session-quit --logout
+
+    # unofficial binding suggestions
+
+    bindsym $mod+Shift+h exec cinnamon-session-quit --power-off
+    bindsym $mod+Shift+l exec cinnamon-screensaver-command -l

@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Documentation improved
+
 ## [0.4.0] - 2016-08-09
 
 ### Changed
