@@ -1,6 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=i3 + Cinnamon
-Comment=i3 with cinnamon-session and cinnamon-settings-daemon
+Name=Cinnamon-i3
+Comment=i3 as window manager for cinnamon sessions 
 Exec=/usr/bin/cinnamon-i3-session
 Type=XSession
