@@ -18,10 +18,7 @@ Packages:
 
 | distro        | package       |
 | ------------- |:-------------:|
-| debian        | right-aligned |
-| aur           | centered      |
-
-[cinnamon-i3_{$version}_amd64.deb](https://github.com/krusipo/cinnamon-i3/releases/lastest)
+| debian        | [cinnamon-i3_{$version}_amd64.deb](https://github.com/krusipo/cinnamon-i3/releases/latest) |
 
 
 Build from source:
@@ -30,14 +27,14 @@ Build from source:
         debian              Build debian package to dist/debian
         aur                 Build aur package to dist/aur
 
-Debian
+Install Debian Package
 
-    sudo dpkg -i cinnamon-i3_{$version}_amd64.deb;
+    sudo dpkg -i {$path_to_package}/cinnamon-i3_{$version}_amd64.deb;
     sudo apt-get -f install; 
     
     or
 
-    sudo gdebi cinnamon-i3_{$version}_amd64.deb;
+    sudo gdebi {$path_to_package}/cinnamon-i3_{$version}_amd64.deb;
 
 Bindings for i3 config
 
