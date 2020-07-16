@@ -5,6 +5,6 @@ Maintainer: Jonas Odencrants
 Section: cinnamon
 Priority: optional
 Installed-Size: 1824
-Depends: i3-wm (>= 4.0), desktop-file-utils, libcinnamon-desktop-dev, cinnamon-screensaver, polkit-gnome | install-info
+Depends: i3-wm (>= 4.0), desktop-file-utils, libcinnamon-desktop-dev, cinnamon-screensaver, polkit-gnome, notification-daemon | install-info
 Homepage: https://github.com/krusipo/cinnamon-i3
 Description: i3 as window manager for cinnamon sessions
